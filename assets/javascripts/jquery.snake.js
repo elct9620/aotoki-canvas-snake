@@ -272,7 +272,7 @@
             canvas = self[0].getContext("2d");
 
             //Initialize Game Object
-            speed = initSpeed; // Reset Speed
+            self.setSpeed(initSpeed); // Reset Speed
             snake = new SnakeObject();
             apple = new AppleObject();
 
