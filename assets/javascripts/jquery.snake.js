@@ -82,6 +82,7 @@
             clearTimeout(timeout);
             $(document).unbind('keydown');
             $(snake).unbind('appleEaten');
+            self.setSpeed(initSpeed);
             self.start();
         }
 
@@ -272,7 +273,6 @@
             canvas = self[0].getContext("2d");
 
             //Initialize Game Object
-            self.setSpeed(initSpeed); // Reset Speed
             snake = new SnakeObject();
             apple = new AppleObject();
 
