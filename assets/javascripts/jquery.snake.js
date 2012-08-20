@@ -40,12 +40,12 @@
             canvas.save();
 
             canvas.clearRect(0, 0, canvasWidth, canvasHeight);
-            canvas.font = '30px "Open Sans" normal';
+            canvas.font = '30px "Open Sans",sans-serif normal';
             canvas.fillStyle = "#000";
             canvas.textAlign = "center";
             canvas.textBaseline = "middle";
             canvas.fillText("Game Over", centerX, centerY - 10);
-            canvas.font = '15px "Open Sans" normal';
+            canvas.font = '15px "Open Sans",sans-serif normal';
             canvas.fillText("Press space to restart", centerX, centerY + 15);
 
             canvas.restore();
