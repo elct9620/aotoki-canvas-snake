@@ -21,6 +21,7 @@
             snakeColor = args.snakeColor || "#FFF",
             appleColor = args.appleColor || "#FFF",
             speed = args.speed || 2,
+            initSpeed = speed,
             frameLength = Math.ceil(1000 / speed) || 500, //Count Frame Per Second, Default 30 FPS around 1000/30 = 33.333
             blockSize = args.blockSize || 10,
             startX = args.startX || 30,
@@ -271,6 +272,7 @@
             canvas = self[0].getContext("2d");
 
             //Initialize Game Object
+            speed = initSpeed; // Reset Speed
             snake = new SnakeObject();
             apple = new AppleObject();
 
